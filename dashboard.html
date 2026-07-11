@@ -27,16 +27,15 @@
 
 <nav>
 
-<a href="#">Dashboard</a>
+<a href="dashboard.html">Dashboard</a>
 
 <a href="#">Support</a>
 
-<a href="index.html">Logout</a>
+<a href="#" id="logoutBtn">Logout</a>
 
 </nav>
 
 </header>
-
 
 <section class="dashboard">
 
@@ -48,6 +47,8 @@
 
 <h1 id="walletBalance">₦0.00</h1>
 
+<p id="userName">Loading...</p>
+
 </div>
 
 <button id="fundWalletBtn">
@@ -57,7 +58,6 @@ Add Funds
 </button>
 
 </div>
-
 
 <div class="dashboard-menu">
 
@@ -101,7 +101,6 @@ Buy Now
 
 </section>
 
-
 <div class="bottom-nav">
 
 <a href="#">Orders</a>
@@ -112,11 +111,13 @@ Buy Now
 
 <a href="buy-usa.html">Buy</a>
 
-<a href="index.html">Logout</a>
+<a href="#" id="logoutBottom">Logout</a>
 
 </div>
 
 <script src="script.js"></script>
+
+<script type="module" src="dashboard.js"></script>
 
 </body>
 
