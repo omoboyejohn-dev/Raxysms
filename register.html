@@ -4,24 +4,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RaxySMS - Register</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
     <div class="logo">RaxySMS</div>
   </header>
 
   <section class="form-container">
+
     <h1>Create Account</h1>
-    <p>Enter your information below to get started</p>
+
+    <p>Enter your information below to get started.</p>
+
     <form id="registerForm">
-      <input type="text" placeholder="Name" id="name" required>
-      <input type="email" placeholder="Email" id="email" required>
-      <input type="password" placeholder="Password" id="password" required>
-      <input type="password" placeholder="Confirm Password" id="confirmPassword" required>
-      <button type="submit" class="btn">Register</button>
+
+      <input
+        type="text"
+        id="name"
+        placeholder="Full Name"
+        required
+      >
+
+      <input
+        type="email"
+        id="email"
+        placeholder="Email Address"
+        required
+      >
+
+      <input
+        type="password"
+        id="password"
+        placeholder="Password"
+        required
+      >
+
+      <input
+        type="password"
+        id="confirmPassword"
+        placeholder="Confirm Password"
+        required
+      >
+
+      <button type="submit" class="btn">
+        Create Account
+      </button>
+
     </form>
-    <p>Already have an account? <a href="login.html">Login</a></p>
+
+    <p>
+      Already have an account?
+      <a href="login.html">Login</a>
+    </p>
+
   </section>
+
+  <script type="module" src="register.js"></script>
+
 </body>
 </html>
