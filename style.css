@@ -129,3 +129,118 @@ form input {
 .btn:hover {
   background: #0056b3;
 }
+/* =====================================
+   RAXY-SMS DASHBOARD
+===================================== */
+
+.dashboard{
+    padding:40px 8%;
+    min-height:80vh;
+}
+
+.wallet-card{
+    background:linear-gradient(135deg,#1677ff,#0b5ed7);
+    color:#fff;
+    border-radius:20px;
+    padding:30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+}
+
+.wallet-card h3{
+    font-size:18px;
+    margin-bottom:10px;
+    font-weight:500;
+}
+
+.wallet-card h1{
+    font-size:42px;
+}
+
+.wallet-card button{
+    background:#fff;
+    color:#1677ff;
+    padding:15px 30px;
+    border:none;
+    border-radius:12px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.wallet-card button:hover{
+    background:#f3f4f6;
+}
+
+.dashboard-menu{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+.menu-card{
+    background:#111c33;
+    padding:30px;
+    border-radius:18px;
+    transition:.3s;
+}
+
+.menu-card:hover{
+    transform:translateY(-5px);
+}
+
+.menu-card h3{
+    color:#60a5fa;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.menu-card p{
+    color:#cbd5e1;
+    margin-bottom:20px;
+    line-height:1.6;
+}
+
+.bottom-nav{
+    position:fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    background:#081225;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:15px 10px;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+.bottom-nav a{
+    color:#fff;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:600;
+}
+
+.bottom-nav a:hover{
+    color:#60a5fa;
+}
+
+@media(max-width:768px){
+
+.wallet-card{
+    flex-direction:column;
+    text-align:center;
+    gap:20px;
+}
+
+.dashboard-menu{
+    grid-template-columns:1fr;
+}
+
+.wallet-card h1{
+    font-size:34px;
+}
+
+}
